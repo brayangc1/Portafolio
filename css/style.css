@@ -1,0 +1,516 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?uf8a0x');
+    src:  url('../fonts/icomoon.eot?uf8a0x#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?uf8a0x') format('truetype'),
+      url('../fonts/icomoon.woff?uf8a0x') format('woff'),
+      url('../fonts/icomoon.svg?uf8a0x#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
+  .burguer-button{
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      background:rgba(0,0,0,.8);
+      border-radius: 50%;
+      display: none;
+      text-align: center;
+      line-height: 40px;
+      color: white;
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      z-index: 3;
+  }
+/* Header del proyecto */
+.header-ba{
+    height: auto;
+    font-size: 1.6rem;
+    background-color: #14213d;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.head-container{
+    max-width: 1000px;
+    padding: 0 10px;
+    display: inherit;
+    flex-wrap: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex:1;
+    margin: 0 auto;
+}
+.linea{
+    height: 1px;
+    background-image: -webkit-linear-gradient(0deg, #f7bf17 15%,#64de35 15%);
+}
+.logo-ba img{
+    height: 55px;
+}
+.nav-header{
+    display: inherit;
+}
+.nav-header ul{
+    display: inherit;
+    list-style: none;
+}
+.nav-header a{
+    text-decoration: none;
+    color: #e9ecef;
+    margin-left: 30px;
+}
+/* Cuerpo del proyecto */
+.main-ba{
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inicio-perfil{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #14213d;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+.container-inicio{
+    max-width: 1000px;
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: inherit;
+    margin: 0 auto;
+    flex: 1;
+    align-items: center;
+}
+h1{
+    width: 50%;
+    font-size: 3.5rem;
+}
+.name{
+    color: #f7bf17;
+    font-weight: bold;
+}
+.estudio{
+    color: #64de35;
+    font-weight: bold;
+}
+.container-inicio picture{
+    width: 50%;
+}
+.inicio-perfil img{
+    width: 100%;
+    
+}
+/* portafolio del proyecto */
+.portafolio{
+    width: 100%;
+    color: #14213d;
+    padding: 0 30px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    /* border: 1px solid #64de35; */
+}
+.art-portafolio{
+    margin: 30px 0;
+    max-width: 1000px;
+    display: inherit;
+    flex-wrap: inherit ;
+    /* border: 1px solid #f7bf17; */
+}
+.art-titulo{
+    font-weight: bold;
+    color: #007bce;
+    font-size: 2.5rem;
+    margin: 10px 0 20px 0;
+}
+.card-container{
+    border: 1px solid #14213d;
+    padding: 25px;
+    border-radius: 10px;
+    color: black;
+    margin: 20px 0;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: inherit;
+}
+.cards{
+    width: 50%;
+    display: inherit;
+    flex-direction: column;
+}
+.titulo{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.cards p{
+    margin-bottom: 5px;
+}
+.cargo{
+    font-size: 1.7rem;
+}
+.fecha{
+    font-size: 1.3rem;
+}
+.descripcion{
+    display: inherit;
+    font-size: 2rem;
+    text-align: justify;
+}
+.art-logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.art-logo img{
+    width: 100%;
+    max-width: 300px;
+}
+/* experiencia del portafolio */
+.experiencia{
+    width: 100%;
+    height: auto;
+    color: #14213d;
+    background-color: #e9ecef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.art-exp{
+    max-width: 1000px;
+    margin: 30px 0;
+    justify-content: center;
+    display: inherit;
+    flex-wrap: inherit;
+    justify-content: left;
+    /* border: 1px solid red; */
+}
+.art-exp .art-titulo{
+    width: 100%;
+}
+.art-card-exp{
+    /* padding: 10px; */
+    display: inherit;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    /* border: 1px solid blue; */
+}
+.card-exp{
+    width: 46%;
+    max-height:450px;
+    margin: 2%;
+    background-color: #14213d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.img-exp{
+    width: 85%;
+    max-height: 350px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.img-exp.video{
+    width: 100%;
+    background-color: #577590;
+    min-height: 350px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.img-exp img{
+    width: 100%;
+}
+.img-exp video{
+    width: 100%;
+}
+.container-youtube{
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+.youtube-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    
+}
+.exp-titulo{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.exp-descripcion{
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 6px 0;
+}
+.cont-descripcion{
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background-color:#ffffff;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cont-descripcion.video{
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background-color:#ffffff;
+    position: relative;
+    bottom: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cont-detalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.cont-detalle a{
+    text-decoration: none;
+    color: #007bce;
+    border: 1px solid #007bce;
+    padding: 3px;
+}
+.container-contacto{
+    width: 100%;
+    min-height: 150px;
+    background-color: #577590;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.contacto{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 2% 0;
+}
+.correo label{
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: block;
+    margin: 10px 0;
+}
+.correo input{
+    padding: 4px 30px;
+    margin-right: 10px;
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/888/888853.svg');
+    background-repeat: no-repeat;
+    background-position-x: 2px;
+}
+.correo button{
+    padding: 4px;
+}
+.redes{
+    display: inherit;
+    align-items: center;
+}
+.red.facebook{
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/2111/2111398.svg');
+}
+.red.twitter{
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/733/733579.svg');
+}
+.red.youtube{
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/733/733590.svg');
+}
+.red.github{
+    background-image: url('https://www.flaticon.es/svg/static/icons/svg/1051/1051275.svg');
+}
+.red{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.footer{
+    height: 70px;
+    background-color: #14213d;
+    font-size: 1.6rem;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+}
+@media screen and (max-width:767px){
+    /* header en tablet */
+    .burguer-button{
+        display: block;
+    }
+    .head-container{
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    .logo-ba {
+        padding-top: 10px;
+    }
+    .nav-header{
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(100, 222, 53, .9);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -100vw;
+        transition: .3s;
+    }
+    .nav-header.activate{
+        left: 0;
+    }
+    .nav-header ul{
+        flex-direction: column;
+    }
+    .nav-header li{
+        padding: 10px 0;
+    }
+    .nav-header a{
+        margin-left: 0;
+        font-size: 1.6rem;
+    }
+    h1{
+        width: 95%;
+        height: 300px;
+        font-size: 2.5rem;
+        z-index: 1;
+        padding: 30px;
+        text-shadow: 1px 2px 2px #000;
+    }
+    .container-inicio picture{
+        width: 100%;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .container-inicio img{
+        object-fit: cover;
+    }
+    .art-portafolio{
+        justify-content: center;
+    }
+    .art-titulo{
+        font-size: 2.3rem;
+    }
+    .card-container{
+        display: block;
+    }
+    .cards p{
+        text-align: center;
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+    .cargo{
+        font-size: 1.5rem;
+    }
+    .fecha{
+        font-size: 1rem;
+    }
+    .descripcion{
+        margin: 5px 0;
+        font-size: 1.7rem;
+    }
+    .cards{
+        width: 100%;
+    }
+    .art-logo{
+        width: initial;
+        text-align: center;
+    }
+    .art-exp{
+        flex-direction: column;
+    }
+    .art-exp .art-titulo{
+        text-align: center;
+    }
+    .img-exp img{
+        object-fit: cover;
+    }
+    .card-exp{
+        width: 90%;
+        margin: 5% auto;
+    }
+    .exp-titulo{
+        font-size: 1.4rem;
+    }
+    .exp-descripcion{
+        font-size: 1rem;
+    }
+    .cont-detalle{
+        font-size: 1.2rem;
+    }
+    .contacto{
+        justify-content: center;
+    }
+    .redes{
+        padding: 5% 0;
+    }
+    .footer{
+        font-size: 1.4rem;
+    }
+    .footer1{
+        width: 50%;
+    }
+}

@@ -1,0 +1,4 @@
+LETRA-B: f7bf17
+LETRA-A: 64de35
+sombra: 0a304b - 4px
+Letra: Fredoka One
